@@ -249,7 +249,7 @@
 }
 .home-register {
   color: var(--dl-color-gray-white);
-  height: 26px;
+  height: auto;
   font-style: normal;
   font-weight: 700;
   text-decoration: none;
@@ -680,7 +680,7 @@
 }
 .home-register2 {
   color: var(--dl-color-gray-white);
-  height: 26px;
+  height: auto;
   font-style: normal;
   font-weight: 700;
   text-decoration: none;
