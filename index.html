@@ -1,0 +1,764 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Senger Construction</title>
+    <meta property="og:title" content="Senger Construction" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="utf-8" />
+    <meta property="twitter:card" content="summary_large_image" />
+
+    <style data-tag="reset-style-sheet">
+      html {  line-height: 1.15;}body {  margin: 0;}* {  box-sizing: border-box;  border-width: 0;  border-style: solid;}p,li,ul,pre,div,h1,h2,h3,h4,h5,h6,figure,blockquote,figcaption {  margin: 0;  padding: 0;}button {  background-color: transparent;}button,input,optgroup,select,textarea {  font-family: inherit;  font-size: 100%;  line-height: 1.15;  margin: 0;}button,select {  text-transform: none;}button,[type="button"],[type="reset"],[type="submit"] {  -webkit-appearance: button;}button::-moz-focus-inner,[type="button"]::-moz-focus-inner,[type="reset"]::-moz-focus-inner,[type="submit"]::-moz-focus-inner {  border-style: none;  padding: 0;}button:-moz-focus,[type="button"]:-moz-focus,[type="reset"]:-moz-focus,[type="submit"]:-moz-focus {  outline: 1px dotted ButtonText;}a {  color: inherit;  text-decoration: inherit;}input {  padding: 2px 4px;}img {  display: block;}html { scroll-behavior: smooth  }
+    </style>
+    <style data-tag="default-style-sheet">
+      html {
+        font-family: Inter;
+        font-size: 16px;
+      }
+
+      body {
+        font-weight: 400;
+        font-style:normal;
+        text-decoration: none;
+        text-transform: none;
+        letter-spacing: normal;
+        line-height: 1.15;
+        color: var(--dl-color-gray-black);
+        background-color: var(--dl-color-gray-white);
+
+      }
+    </style>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@0,300;0,400;0,700;0,900;1,300;1,400;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Oxygen:wght@300;400;700&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&amp;display=swap"
+      data-tag="font"
+    />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/@teleporthq/teleport-custom-scripts/dist/style.css"
+    />
+    <style>
+      @keyframes fade-in-left {
+        0% {
+          opacity: 0;
+          transform: translateX(-20px);
+        }
+        100% {
+          opacity: 1;
+          transform: translateX(0);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <link rel="stylesheet" href="./style.css" />
+    <div>
+      <link href="./index.css" rel="stylesheet" />
+
+      <div class="home-container">
+        <div class="home-header">
+          <header data-thq="thq-navbar" class="home-navbar-interactive">
+            <img
+              alt="image"
+              src="public/external/scg-transparent-logo-500w.png"
+              class="home-image"
+            />
+            <div data-thq="thq-burger-menu" class="home-burger-menu">
+              <svg viewBox="0 0 1024 1024" class="home-icon">
+                <path
+                  d="M128 554.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 298.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667zM128 810.667h768c23.552 0 42.667-19.115 42.667-42.667s-19.115-42.667-42.667-42.667h-768c-23.552 0-42.667 19.115-42.667 42.667s19.115 42.667 42.667 42.667z"
+                ></path>
+              </svg>
+            </div>
+            <div class="home-container01">
+              <div class="home-buttons">
+                <svg viewBox="0 0 1024 1024" class="home-icon02">
+                  <path
+                    d="M282 460q96 186 282 282l94-94q20-20 44-10 72 24 152 24 18 0 30 12t12 30v150q0 18-12 30t-30 12q-300 0-513-213t-213-513q0-18 12-30t30-12h150q18 0 30 12t12 30q0 80 24 152 8 26-10 44z"
+                  ></path>
+                </svg>
+                <a href="tel:+64 021 253 9690" class="home-register">
+                  021 253 9690
+                </a>
+              </div>
+              <div data-thq="thq-navbar-nav" class="home-desktop-menu"></div>
+              <a href="#contact-us" class="home-link button">GET FREE QUOTE</a>
+            </div>
+            <div data-thq="thq-mobile-menu" class="home-mobile-menu">
+              <div class="home-nav">
+                <div class="home-top">
+                  <span class="home-logo">SENGER</span>
+                  <div data-thq="thq-close-menu" class="home-close-menu">
+                    <svg viewBox="0 0 1024 1024" class="home-icon04">
+                      <path
+                        d="M810 274l-238 238 238 238-60 60-238-238-238 238-60-60 238-238-238-238 60-60 238 238 238-238z"
+                      ></path>
+                    </svg>
+                  </div>
+                </div>
+                <nav class="home-links">
+                  <span class="home-nav1">About</span>
+                  <span class="home-nav2">Services</span>
+                  <span class="home-nav3">Projects</span>
+                  <span class="home-nav4">Contact</span>
+                  <span class="home-nav5">Blog</span>
+                </nav>
+                <div class="home-buttons1">
+                  <button class="home-login button">Login</button>
+                  <button class="home-register1 button">Register</button>
+                </div>
+              </div>
+              <div>
+                <svg viewBox="0 0 950.8571428571428 1024" class="home-icon06">
+                  <path
+                    d="M925.714 233.143c-25.143 36.571-56.571 69.143-92.571 95.429 0.571 8 0.571 16 0.571 24 0 244-185.714 525.143-525.143 525.143-104.571 0-201.714-30.286-283.429-82.857 14.857 1.714 29.143 2.286 44.571 2.286 86.286 0 165.714-29.143 229.143-78.857-81.143-1.714-149.143-54.857-172.571-128 11.429 1.714 22.857 2.857 34.857 2.857 16.571 0 33.143-2.286 48.571-6.286-84.571-17.143-148-91.429-148-181.143v-2.286c24.571 13.714 53.143 22.286 83.429 23.429-49.714-33.143-82.286-89.714-82.286-153.714 0-34.286 9.143-65.714 25.143-93.143 90.857 112 227.429 185.143 380.571 193.143-2.857-13.714-4.571-28-4.571-42.286 0-101.714 82.286-184.571 184.571-184.571 53.143 0 101.143 22.286 134.857 58.286 41.714-8 81.714-23.429 117.143-44.571-13.714 42.857-42.857 78.857-81.143 101.714 37.143-4 73.143-14.286 106.286-28.571z"
+                  ></path></svg
+                ><svg viewBox="0 0 877.7142857142857 1024" class="home-icon08">
+                  <path
+                    d="M585.143 512c0-80.571-65.714-146.286-146.286-146.286s-146.286 65.714-146.286 146.286 65.714 146.286 146.286 146.286 146.286-65.714 146.286-146.286zM664 512c0 124.571-100.571 225.143-225.143 225.143s-225.143-100.571-225.143-225.143 100.571-225.143 225.143-225.143 225.143 100.571 225.143 225.143zM725.714 277.714c0 29.143-23.429 52.571-52.571 52.571s-52.571-23.429-52.571-52.571 23.429-52.571 52.571-52.571 52.571 23.429 52.571 52.571zM438.857 152c-64 0-201.143-5.143-258.857 17.714-20 8-34.857 17.714-50.286 33.143s-25.143 30.286-33.143 50.286c-22.857 57.714-17.714 194.857-17.714 258.857s-5.143 201.143 17.714 258.857c8 20 17.714 34.857 33.143 50.286s30.286 25.143 50.286 33.143c57.714 22.857 194.857 17.714 258.857 17.714s201.143 5.143 258.857-17.714c20-8 34.857-17.714 50.286-33.143s25.143-30.286 33.143-50.286c22.857-57.714 17.714-194.857 17.714-258.857s5.143-201.143-17.714-258.857c-8-20-17.714-34.857-33.143-50.286s-30.286-25.143-50.286-33.143c-57.714-22.857-194.857-17.714-258.857-17.714zM877.714 512c0 60.571 0.571 120.571-2.857 181.143-3.429 70.286-19.429 132.571-70.857 184s-113.714 67.429-184 70.857c-60.571 3.429-120.571 2.857-181.143 2.857s-120.571 0.571-181.143-2.857c-70.286-3.429-132.571-19.429-184-70.857s-67.429-113.714-70.857-184c-3.429-60.571-2.857-120.571-2.857-181.143s-0.571-120.571 2.857-181.143c3.429-70.286 19.429-132.571 70.857-184s113.714-67.429 184-70.857c60.571-3.429 120.571-2.857 181.143-2.857s120.571-0.571 181.143 2.857c70.286 3.429 132.571 19.429 184 70.857s67.429 113.714 70.857 184c3.429 60.571 2.857 120.571 2.857 181.143z"
+                  ></path></svg
+                ><svg viewBox="0 0 602.2582857142856 1024" class="home-icon10">
+                  <path
+                    d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </header>
+        </div>
+        <div class="home-hero">
+          <div id="contact-us" class="home-hero1">
+            <div class="home-container02">
+              <h1 class="home-hero-heading heading1">
+                Welcome to Senger Construction Group
+              </h1>
+              <span class="home-hero-sub-heading">
+                Your trusted construction partner in Hamilton, Waikato
+              </span>
+            </div>
+            <div id="contact-us" class="home-container03">
+              <form class="home-form">
+                <h1 class="home-text">Send us a message</h1>
+                <input type="text" placeholder="Name" class="input" />
+                <input type="tel" placeholder="Phone" class="input" />
+                <input type="email" placeholder="Email" class="input" />
+                <input type="text" placeholder="Subject" class="input" />
+                <textarea
+                  cols="4"
+                  rows="6"
+                  placeholder="Message"
+                  class="home-textarea textarea"
+                ></textarea>
+                <button type="submit" class="home-button button">SUBMIT</button>
+              </form>
+            </div>
+          </div>
+        </div>
+        <div class="home-details">
+          <div class="home-details1">
+            <div class="home-container04">
+              <span class="home-text01 sectionTitle">
+                <span>Details</span>
+                <br />
+              </span>
+              <h2 class="home-details-heading heading2">
+                Exceptional Customer Service and Attention to Detail
+              </h2>
+              <span class="home-details-sub-heading">
+                At Senger Construction Group, we take pride in delivering
+                exceptional customer service and paying attention to every
+                detail of your project. With our experienced team, we ensure
+                that your construction needs are met in a timely manner and to
+                the highest standards. From new builds to renovations,
+                landscaping to demolition, concrete services, we have you
+                covered.
+              </span>
+            </div>
+            <img
+              alt="image of house"
+              src="public/serger-construction-img-1-400h.jpg"
+              class="home-details-image"
+            />
+          </div>
+        </div>
+        <div class="home-features">
+          <div class="home-features-container">
+            <div class="home-features1">
+              <div class="home-container05">
+                <span class="home-text04 sectionTitle">
+                  <span>features</span>
+                  <br />
+                </span>
+                <h2 class="home-features-heading heading2">Our Services</h2>
+                <span class="home-features-sub-heading">
+                  Discover the wide range of construction services we offer to
+                  meet all your needs.
+                </span>
+              </div>
+              <div class="home-container06">
+                <div class="feature-card-feature-card">
+                  <svg viewBox="0 0 1024 1024" class="feature-card-icon">
+                    <path
+                      d="M896 472.747v39.253c-0.043 106.027-43.051 201.941-112.64 271.445s-165.547 112.384-271.573 112.299-201.984-43.051-271.445-112.64-112.384-165.504-112.341-271.573 43.051-201.941 112.64-271.445 165.547-112.384 271.573-112.341c56.747 0.043 110.336 12.331 155.691 33.067 21.419 9.813 46.763 0.341 56.533-21.077s0.341-46.763-21.077-56.533c-56.619-25.856-122.283-40.747-191.104-40.789-129.579-0.085-246.997 52.437-331.947 137.259s-137.557 202.24-137.643 331.819 52.437 246.997 137.259 331.947 202.197 137.6 331.776 137.643 246.997-52.437 331.947-137.259 137.6-202.197 137.685-331.819v-39.253c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667zM908.501 140.501l-396.501 396.885-97.835-97.792c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l128 128c16.683 16.683 43.691 16.64 60.373 0l426.667-427.093c16.64-16.683 16.64-43.691-0.043-60.331s-43.691-16.64-60.331 0.043z"
+                    ></path>
+                  </svg>
+                  <div class="feature-card-container">
+                    <h3 class="feature-card-text heading3">
+                      <span>New Builds</span>
+                    </h3>
+                    <span class="feature-card-text1">
+                      <span>
+                        We specialize in constructing new buildings, ensuring
+                        high-quality workmanship and attention to detail.
+                      </span>
+                    </span>
+                  </div>
+                </div>
+                <div class="feature-card-feature-card">
+                  <svg viewBox="0 0 1024 1024" class="feature-card-icon">
+                    <path
+                      d="M896 472.747v39.253c-0.043 106.027-43.051 201.941-112.64 271.445s-165.547 112.384-271.573 112.299-201.984-43.051-271.445-112.64-112.384-165.504-112.341-271.573 43.051-201.941 112.64-271.445 165.547-112.384 271.573-112.341c56.747 0.043 110.336 12.331 155.691 33.067 21.419 9.813 46.763 0.341 56.533-21.077s0.341-46.763-21.077-56.533c-56.619-25.856-122.283-40.747-191.104-40.789-129.579-0.085-246.997 52.437-331.947 137.259s-137.557 202.24-137.643 331.819 52.437 246.997 137.259 331.947 202.197 137.6 331.776 137.643 246.997-52.437 331.947-137.259 137.6-202.197 137.685-331.819v-39.253c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667zM908.501 140.501l-396.501 396.885-97.835-97.792c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l128 128c16.683 16.683 43.691 16.64 60.373 0l426.667-427.093c16.64-16.683 16.64-43.691-0.043-60.331s-43.691-16.64-60.331 0.043z"
+                    ></path>
+                  </svg>
+                  <div class="feature-card-container">
+                    <h3 class="feature-card-text heading3">
+                      <span>Renovations</span>
+                    </h3>
+                    <span class="feature-card-text1">
+                      <span>
+                        Transform your existing space with our renovation
+                        services, tailored to meet your specific requirements.
+                      </span>
+                    </span>
+                  </div>
+                </div>
+                <div class="feature-card-feature-card">
+                  <svg viewBox="0 0 1024 1024" class="feature-card-icon">
+                    <path
+                      d="M896 472.747v39.253c-0.043 106.027-43.051 201.941-112.64 271.445s-165.547 112.384-271.573 112.299-201.984-43.051-271.445-112.64-112.384-165.504-112.341-271.573 43.051-201.941 112.64-271.445 165.547-112.384 271.573-112.341c56.747 0.043 110.336 12.331 155.691 33.067 21.419 9.813 46.763 0.341 56.533-21.077s0.341-46.763-21.077-56.533c-56.619-25.856-122.283-40.747-191.104-40.789-129.579-0.085-246.997 52.437-331.947 137.259s-137.557 202.24-137.643 331.819 52.437 246.997 137.259 331.947 202.197 137.6 331.776 137.643 246.997-52.437 331.947-137.259 137.6-202.197 137.685-331.819v-39.253c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667zM908.501 140.501l-396.501 396.885-97.835-97.792c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l128 128c16.683 16.683 43.691 16.64 60.373 0l426.667-427.093c16.64-16.683 16.64-43.691-0.043-60.331s-43.691-16.64-60.331 0.043z"
+                    ></path>
+                  </svg>
+                  <div class="feature-card-container">
+                    <h3 class="feature-card-text heading3">
+                      <span>Landscaping</span>
+                    </h3>
+                    <span class="feature-card-text1">
+                      <span>
+                        Enhance the beauty of your outdoor space with our
+                        landscaping expertise, creating stunning gardens and
+                        features.
+                      </span>
+                    </span>
+                  </div>
+                </div>
+                <div class="feature-card-feature-card">
+                  <svg viewBox="0 0 1024 1024" class="feature-card-icon">
+                    <path
+                      d="M896 472.747v39.253c-0.043 106.027-43.051 201.941-112.64 271.445s-165.547 112.384-271.573 112.299-201.984-43.051-271.445-112.64-112.384-165.504-112.341-271.573 43.051-201.941 112.64-271.445 165.547-112.384 271.573-112.341c56.747 0.043 110.336 12.331 155.691 33.067 21.419 9.813 46.763 0.341 56.533-21.077s0.341-46.763-21.077-56.533c-56.619-25.856-122.283-40.747-191.104-40.789-129.579-0.085-246.997 52.437-331.947 137.259s-137.557 202.24-137.643 331.819 52.437 246.997 137.259 331.947 202.197 137.6 331.776 137.643 246.997-52.437 331.947-137.259 137.6-202.197 137.685-331.819v-39.253c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667zM908.501 140.501l-396.501 396.885-97.835-97.792c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l128 128c16.683 16.683 43.691 16.64 60.373 0l426.667-427.093c16.64-16.683 16.64-43.691-0.043-60.331s-43.691-16.64-60.331 0.043z"
+                    ></path>
+                  </svg>
+                  <div class="feature-card-container">
+                    <h3 class="feature-card-text heading3">
+                      <span>Earthworks</span>
+                    </h3>
+                    <span class="feature-card-text1">
+                      <span>
+                        We have the necessary equipment and expertise to handle
+                        earthmoving projects of any scale, ensuring efficient
+                        and precise work.
+                      </span>
+                    </span>
+                  </div>
+                </div>
+                <div class="feature-card-feature-card">
+                  <svg viewBox="0 0 1024 1024" class="feature-card-icon">
+                    <path
+                      d="M896 472.747v39.253c-0.043 106.027-43.051 201.941-112.64 271.445s-165.547 112.384-271.573 112.299-201.984-43.051-271.445-112.64-112.384-165.504-112.341-271.573 43.051-201.941 112.64-271.445 165.547-112.384 271.573-112.341c56.747 0.043 110.336 12.331 155.691 33.067 21.419 9.813 46.763 0.341 56.533-21.077s0.341-46.763-21.077-56.533c-56.619-25.856-122.283-40.747-191.104-40.789-129.579-0.085-246.997 52.437-331.947 137.259s-137.557 202.24-137.643 331.819 52.437 246.997 137.259 331.947 202.197 137.6 331.776 137.643 246.997-52.437 331.947-137.259 137.6-202.197 137.685-331.819v-39.253c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667zM908.501 140.501l-396.501 396.885-97.835-97.792c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l128 128c16.683 16.683 43.691 16.64 60.373 0l426.667-427.093c16.64-16.683 16.64-43.691-0.043-60.331s-43.691-16.64-60.331 0.043z"
+                    ></path>
+                  </svg>
+                  <div class="feature-card-container">
+                    <h3 class="feature-card-text heading3">
+                      <span>Concrete</span>
+                    </h3>
+                    <span class="feature-card-text1">
+                      <span>
+                        Build with confidence using our expert concrete
+                        services, ensuring a solid foundation for your projects
+                        with precision and durability.
+                      </span>
+                    </span>
+                  </div>
+                </div>
+                <div class="feature-card-feature-card">
+                  <svg viewBox="0 0 1024 1024" class="feature-card-icon">
+                    <path
+                      d="M896 472.747v39.253c-0.043 106.027-43.051 201.941-112.64 271.445s-165.547 112.384-271.573 112.299-201.984-43.051-271.445-112.64-112.384-165.504-112.341-271.573 43.051-201.941 112.64-271.445 165.547-112.384 271.573-112.341c56.747 0.043 110.336 12.331 155.691 33.067 21.419 9.813 46.763 0.341 56.533-21.077s0.341-46.763-21.077-56.533c-56.619-25.856-122.283-40.747-191.104-40.789-129.579-0.085-246.997 52.437-331.947 137.259s-137.557 202.24-137.643 331.819 52.437 246.997 137.259 331.947 202.197 137.6 331.776 137.643 246.997-52.437 331.947-137.259 137.6-202.197 137.685-331.819v-39.253c0-23.552-19.115-42.667-42.667-42.667s-42.667 19.115-42.667 42.667zM908.501 140.501l-396.501 396.885-97.835-97.792c-16.683-16.683-43.691-16.683-60.331 0s-16.683 43.691 0 60.331l128 128c16.683 16.683 43.691 16.64 60.373 0l426.667-427.093c16.64-16.683 16.64-43.691-0.043-60.331s-43.691-16.64-60.331 0.043z"
+                    ></path>
+                  </svg>
+                  <div class="feature-card-container">
+                    <h3 class="feature-card-text heading3">
+                      <span>Decking</span>
+                    </h3>
+                    <span class="feature-card-text1">
+                      <span>
+                        Elevate your outdoor space with our premium decking
+                        solutions, seamlessly blending style and strength for a
+                        lasting, inviting atmosphere.
+                      </span>
+                    </span>
+                  </div>
+                </div>
+              </div>
+              <a href="#contact-us" class="home-link1 button">GET FREE QUOTE</a>
+            </div>
+          </div>
+        </div>
+        <div class="home-gallery">
+          <div class="home-gallery1">
+            <h1 class="home-gallery-heading heading2">Our Work</h1>
+            <span class="home-gallery-sub-heading">
+              Take a look at some of our completed projects
+            </span>
+            <div class="home-container07">
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name"
+              >
+                <img
+                  alt="SGC Work Image 1"
+                  src="public/Work/our-work-1-1500w.jpg"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name1"
+              >
+                <img
+                  alt="SGC Work Image 2"
+                  src="public/Work/our-work-2-1500w.jpg"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name3"
+              >
+                <img
+                  alt="SGC Work Image 3"
+                  src="public/Work/our-work-3-1500w.jpg"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name2"
+              >
+                <img
+                  alt="SGC Work Image 4"
+                  src="public/Work/our-work-4-1500w.jpg"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name4"
+              >
+                <img
+                  alt="SGC Work Image 5"
+                  src="public/Work/our-work-5-1500w.jpg"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name5"
+              >
+                <img
+                  alt="SGC Work Image 6"
+                  src="public/Work/our-work-6-1500w.jpg"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name6"
+              >
+                <img
+                  alt="SGC Work Image 7"
+                  src="public/Work/our-work-14-1500w.jpg"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name7"
+              >
+                <img
+                  alt="SGC Work Image 8"
+                  src="public/Work/our-work-8-1500w.jpg"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name8"
+              >
+                <img
+                  alt="SGC Work Image 9"
+                  src="public/Work/our-work-9-1500w.jpg"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name9"
+              >
+                <img
+                  alt="SGC Work Image 10"
+                  src="public/Work/our-work-10-1500w.jpg"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name10"
+              >
+                <img
+                  alt="SGC Work Image 11"
+                  src="public/Work/our-work-11-1500w.jpg"
+                  class="gallery-card3-image"
+                />
+              </div>
+              <div
+                class="gallery-card3-gallery-card gallery-card3-root-class-name11"
+              >
+                <img
+                  alt="SGC Work Image 12"
+                  src="public/Work/our-work-13-1500w.jpg"
+                  class="gallery-card3-image"
+                />
+              </div>
+            </div>
+            <a href="#contact-us" class="home-link2 button">GET FREE QUOTE</a>
+          </div>
+        </div>
+        <div class="home-banner">
+          <div class="home-banner1">
+            <h1 class="home-banner-heading heading2">
+              Quality Construction Services in Hamilton
+            </h1>
+            <span class="home-banner-sub-heading">
+              Providing a wide range of construction services to meet your needs
+            </span>
+            <div class="home-buttons2">
+              <svg viewBox="0 0 1024 1024" class="home-icon12">
+                <path
+                  d="M282 460q96 186 282 282l94-94q20-20 44-10 72 24 152 24 18 0 30 12t12 30v150q0 18-12 30t-30 12q-300 0-513-213t-213-513q0-18 12-30t30-12h150q18 0 30 12t12 30q0 80 24 152 8 26-10 44z"
+                ></path>
+              </svg>
+              <a href="tel:+64 021 253 9690" class="home-register2">
+                021 253 9690
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="home-faq">
+          <div class="home-faq-container">
+            <div class="home-faq1">
+              <div class="home-container08">
+                <span class="home-text07 sectionTitle">
+                  <span>FAQ</span>
+                  <br />
+                </span>
+                <h2 class="home-text10 heading2">Common questions</h2>
+                <span class="home-text11">
+                  <span>
+                    Here are some of the most common questions that we get.
+                  </span>
+                  <br />
+                  <span>
+                    <span>
+                      <span></span>
+                      <span></span>
+                    </span>
+                    <span>
+                      <span></span>
+                      <span></span>
+                    </span>
+                  </span>
+                  <span>
+                    <span>
+                      <span></span>
+                      <span></span>
+                    </span>
+                    <span>
+                      <span></span>
+                      <span></span>
+                    </span>
+                  </span>
+                </span>
+              </div>
+              <div class="home-container09">
+                <div class="question-container">
+                  <span class="question-text heading4">
+                    <span>
+                      What services does Senger Construction Group provide?
+                    </span>
+                  </span>
+                  <span class="question-text1">
+                    <span>
+                      Senger Construction Group provides a wide range of
+                      services including new builds, renovations, landscaping,
+                      earthworks, retaining walls, concrete, decking, fencing,
+                      cleaning, and demolition.
+                    </span>
+                  </span>
+                </div>
+                <div class="question-container">
+                  <span class="question-text heading4">
+                    <span>
+                      What sets Senger Construction Group apart from other
+                      construction companies?
+                    </span>
+                  </span>
+                  <span class="question-text1">
+                    <span>
+                      Senger Construction Group prides itself on exceptional
+                      customer service and attention to detail. We are
+                      experienced in all areas of construction and strive to
+                      exceed expectations by completing every project to the
+                      highest standards. We are also committed to safety and
+                      ensure that all worksites are safe and compliant with
+                      regulations.
+                    </span>
+                  </span>
+                </div>
+                <div class="question-container">
+                  <span class="question-text heading4">
+                    <span>
+                      What services does Senger Construction provide in
+                      concrete?
+                    </span>
+                  </span>
+                  <span class="question-text1">
+                    <span>
+                      Senger Construction specializes in providing expert
+                      concrete services. We offer a wide range of solutions,
+                      including but not limited to concrete pouring, foundation
+                      work, and various concrete structures.
+                    </span>
+                  </span>
+                </div>
+                <div class="question-container">
+                  <span class="question-text heading4">
+                    <span>
+                      Why choose Senger Construction for concrete projects?
+                    </span>
+                  </span>
+                  <span class="question-text1">
+                    <span>
+                      Senger Construction is committed to delivering
+                      high-quality and durable concrete solutions. Our team of
+                      experts ensures precision in every project, providing a
+                      solid foundation that you can trust. We prioritize
+                      customer satisfaction, reliability, and excellence in our
+                      work.
+                    </span>
+                  </span>
+                </div>
+                <div class="question-container">
+                  <span class="question-text heading4">
+                    <span>Where is Senger Construction Group located?</span>
+                  </span>
+                  <span class="question-text1">
+                    <span>
+                      Senger Construction Group is located in Hamilton, Waikato.
+                    </span>
+                  </span>
+                </div>
+                <div class="question-container">
+                  <span class="question-text heading4">
+                    <span>How can I contact Senger Construction Group?</span>
+                  </span>
+                  <span class="question-text1">
+                    <span>
+                      You can get in touch with Senger Construction Group by
+                      contacting us today. We are passionate about providing the
+                      best services to our customers in the Waikato region.
+                    </span>
+                  </span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-testimonial">
+          <div class="home-container10">
+            <h1 class="home-text28">
+              <span>Testimonials</span>
+              <br />
+            </h1>
+            <div class="home-container11">
+              <div
+                class="testimonial-card1-testimonial-card testimonial-card1-root-class-name2"
+              >
+                <svg
+                  viewBox="0 0 950.8571428571428 1024"
+                  class="testimonial-card1-icon"
+                >
+                  <path
+                    d="M438.857 182.857v402.286c0 161.143-131.429 292.571-292.571 292.571h-36.571c-20 0-36.571-16.571-36.571-36.571v-73.143c0-20 16.571-36.571 36.571-36.571h36.571c80.571 0 146.286-65.714 146.286-146.286v-18.286c0-30.286-24.571-54.857-54.857-54.857h-128c-60.571 0-109.714-49.143-109.714-109.714v-219.429c0-60.571 49.143-109.714 109.714-109.714h219.429c60.571 0 109.714 49.143 109.714 109.714zM950.857 182.857v402.286c0 161.143-131.429 292.571-292.571 292.571h-36.571c-20 0-36.571-16.571-36.571-36.571v-73.143c0-20 16.571-36.571 36.571-36.571h36.571c80.571 0 146.286-65.714 146.286-146.286v-18.286c0-30.286-24.571-54.857-54.857-54.857h-128c-60.571 0-109.714-49.143-109.714-109.714v-219.429c0-60.571 49.143-109.714 109.714-109.714h219.429c60.571 0 109.714 49.143 109.714 109.714z"
+                  ></path>
+                </svg>
+                <div class="testimonial-card1-testimonial">
+                  <span class="testimonial-card1-text">
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      In lorem lorem, malesuada in metus vitae, scelerisque
+                      accumsan ipsum. Nam pellentesque nulla leo, sagittis
+                      vehicula sem commodo nec.
+                    </span>
+                  </span>
+                  <span class="testimonial-card1-text1">
+                    <span>Jane Doe</span>
+                  </span>
+                  <img
+                    alt="profile"
+                    src="https://images.unsplash.com/photo-1557053910-d9eadeed1c58?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDF8fHdvbWFuJTIwcG9ydHJhaXR8ZW58MHx8fHwxNjI2NDUxOTgy&amp;ixlib=rb-1.2.1&amp;h=1200"
+                    class="testimonial-card1-image"
+                  />
+                </div>
+              </div>
+              <div
+                class="testimonial-card1-testimonial-card testimonial-card1-root-class-name"
+              >
+                <svg
+                  viewBox="0 0 950.8571428571428 1024"
+                  class="testimonial-card1-icon"
+                >
+                  <path
+                    d="M438.857 182.857v402.286c0 161.143-131.429 292.571-292.571 292.571h-36.571c-20 0-36.571-16.571-36.571-36.571v-73.143c0-20 16.571-36.571 36.571-36.571h36.571c80.571 0 146.286-65.714 146.286-146.286v-18.286c0-30.286-24.571-54.857-54.857-54.857h-128c-60.571 0-109.714-49.143-109.714-109.714v-219.429c0-60.571 49.143-109.714 109.714-109.714h219.429c60.571 0 109.714 49.143 109.714 109.714zM950.857 182.857v402.286c0 161.143-131.429 292.571-292.571 292.571h-36.571c-20 0-36.571-16.571-36.571-36.571v-73.143c0-20 16.571-36.571 36.571-36.571h36.571c80.571 0 146.286-65.714 146.286-146.286v-18.286c0-30.286-24.571-54.857-54.857-54.857h-128c-60.571 0-109.714-49.143-109.714-109.714v-219.429c0-60.571 49.143-109.714 109.714-109.714h219.429c60.571 0 109.714 49.143 109.714 109.714z"
+                  ></path>
+                </svg>
+                <div class="testimonial-card1-testimonial">
+                  <span class="testimonial-card1-text">
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      In lorem lorem, malesuada in metus vitae, scelerisque
+                      accumsan ipsum. Nam pellentesque nulla leo, sagittis
+                      vehicula sem commodo nec.
+                    </span>
+                  </span>
+                  <span class="testimonial-card1-text1">
+                    <span>Jane Doe</span>
+                  </span>
+                  <img
+                    alt="profile"
+                    src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHBvcnRyYWl0fGVufDB8fHx8MTYyNjM3ODk3Mg&amp;ixlib=rb-1.2.1&amp;h=1200"
+                    class="testimonial-card1-image"
+                  />
+                </div>
+              </div>
+              <div
+                class="testimonial-card1-testimonial-card testimonial-card1-root-class-name1"
+              >
+                <svg
+                  viewBox="0 0 950.8571428571428 1024"
+                  class="testimonial-card1-icon"
+                >
+                  <path
+                    d="M438.857 182.857v402.286c0 161.143-131.429 292.571-292.571 292.571h-36.571c-20 0-36.571-16.571-36.571-36.571v-73.143c0-20 16.571-36.571 36.571-36.571h36.571c80.571 0 146.286-65.714 146.286-146.286v-18.286c0-30.286-24.571-54.857-54.857-54.857h-128c-60.571 0-109.714-49.143-109.714-109.714v-219.429c0-60.571 49.143-109.714 109.714-109.714h219.429c60.571 0 109.714 49.143 109.714 109.714zM950.857 182.857v402.286c0 161.143-131.429 292.571-292.571 292.571h-36.571c-20 0-36.571-16.571-36.571-36.571v-73.143c0-20 16.571-36.571 36.571-36.571h36.571c80.571 0 146.286-65.714 146.286-146.286v-18.286c0-30.286-24.571-54.857-54.857-54.857h-128c-60.571 0-109.714-49.143-109.714-109.714v-219.429c0-60.571 49.143-109.714 109.714-109.714h219.429c60.571 0 109.714 49.143 109.714 109.714z"
+                  ></path>
+                </svg>
+                <div class="testimonial-card1-testimonial">
+                  <span class="testimonial-card1-text">
+                    <span>
+                      Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                      In lorem lorem, malesuada in metus vitae, scelerisque
+                      accumsan ipsum. Nam pellentesque nulla leo, sagittis
+                      vehicula sem commodo nec.
+                    </span>
+                  </span>
+                  <span class="testimonial-card1-text1">
+                    <span>Jane Doe</span>
+                  </span>
+                  <img
+                    alt="profile"
+                    src="https://images.unsplash.com/photo-1531746020798-e6953c6e8e04?ixid=Mnw5MTMyMXwwfDF8c2VhcmNofDd8fHdvbWFuJTIwcG9ydHJhaXR8ZW58MHx8fHwxNjI2NDUxOTgy&amp;ixlib=rb-1.2.1&amp;h=1200"
+                    class="testimonial-card1-image"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="home-footer">
+          <footer class="home-footer1">
+            <div class="home-container12">
+              <img
+                alt="image"
+                src="public/external/scg-transparent-logo-500w.png"
+                class="home-image1"
+              />
+            </div>
+            <div class="home-separator"></div>
+            <div class="home-container13">
+              <div class="home-container14">
+                <span class="home-text31">
+                  © 2023 SERGER CONSTRUCTION, All Rights Reserved.&nbsp; |&nbsp;
+                </span>
+                <span class="home-text32">Design by&nbsp;</span>
+                <img
+                  alt="image"
+                  src="public/wp-numerologo-200h.png"
+                  class="home-image2"
+                />
+              </div>
+              <div class="home-icon-group1">
+                <svg viewBox="0 0 602.2582857142856 1024" class="home-icon14">
+                  <path
+                    d="M548 6.857v150.857h-89.714c-70.286 0-83.429 33.714-83.429 82.286v108h167.429l-22.286 169.143h-145.143v433.714h-174.857v-433.714h-145.714v-169.143h145.714v-124.571c0-144.571 88.571-223.429 217.714-223.429 61.714 0 114.857 4.571 130.286 6.857z"
+                  ></path>
+                </svg>
+              </div>
+            </div>
+          </footer>
+        </div>
+      </div>
+    </div>
+    <script
+      data-section-id="navbar"
+      src="https://unpkg.com/@teleporthq/teleport-custom-scripts"
+    ></script>
+  </body>
+</html>
